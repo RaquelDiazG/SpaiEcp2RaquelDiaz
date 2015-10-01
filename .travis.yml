@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+branches:
+  only:
+    - master
+    - develop
+    
+notifications:
+  email:
+    recipients:
+      - raquel.diazgonz@alumnos.upm.es
+
+script: mvn test
