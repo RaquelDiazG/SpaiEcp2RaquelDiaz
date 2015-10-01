@@ -2,6 +2,8 @@
 
 Ejercicio colaborativo entre alumnos: ECP2
 
+![Estado en Travis CI] (https://travis-ci.org/RaquelDiazG/SpaiEcp2RaquelDiaz.svg)
+
 ### Arquitecto de software
 
 * Raquel Díaz González
