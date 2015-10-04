@@ -83,4 +83,14 @@ public class PointTest {
         assertEquals("Point[4,2]", string2);
         assertEquals("Point[3,3]", string3);
     }
+    
+    @Test
+    public void sumTest() {
+        int x1 = point1.getX()+point2.getX();
+        int x2 = point1.getY()+point2.getY();
+        assertEquals(4, x1);
+        assertEquals(2, x2);
+    }
+    
+    
 }
