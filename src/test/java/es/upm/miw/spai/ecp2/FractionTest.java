@@ -49,4 +49,10 @@ public class FractionTest {
         assertEquals(2, decimal2, 10e-3);
         assertEquals(4.5, decimal3, 10e-3);
     }
+    
+    @Test
+	public void testIsGreater() 
+    {
+	    assertEquals(true, fraction3.isGreater(fraction2));
+	}
 }
