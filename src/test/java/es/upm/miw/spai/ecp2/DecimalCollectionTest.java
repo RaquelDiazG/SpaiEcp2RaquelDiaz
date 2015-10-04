@@ -8,6 +8,7 @@ import org.junit.Test;
 public class DecimalCollectionTest {
 
     private DecimalCollection decimalCollection;
+   
 
     @Before
     public void before() {
@@ -57,4 +58,14 @@ public class DecimalCollectionTest {
         decimalCollection.add(35.89);
         assertEquals(35.89, decimalCollection.higher(), 10e-3);
     }
+    
+	
+	@Test
+    public void testAverage() {
+		decimalCollection.add(3.0);
+	    decimalCollection.add(2.5);
+	    decimalCollection.add(1.3);
+        assertEquals(2.26666667, decimalCollection.average(), 10e-5);
+    }
+
 }
