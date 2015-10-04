@@ -56,5 +56,26 @@ public class UserTest {
         assertEquals("S.", initials1);
         assertEquals("R.", initials2);
     }
+    
+    @Test
+    public void setNumberTest() {
+        int newNumber = 7;
+        user2.setNumber(newNumber);
+        assertEquals(user2.getNumber(), newNumber);
+    }
+    
+    @Test
+    public void setNameTest() {
+        String newName = "NewName";
+        user2.setName(newName);
+        assertEquals(user2.getName(), newName);
+    }
+    
+    @Test
+    public void setFamilyNameTest() {
+        String newFamilyName = "NewFamilyName";
+        user2.setFamilyName(newFamilyName);
+        assertEquals(user2.getFamilyName(), newFamilyName);
+    }
 
 }
