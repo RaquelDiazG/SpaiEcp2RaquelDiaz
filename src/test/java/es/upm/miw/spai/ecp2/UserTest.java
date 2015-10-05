@@ -77,5 +77,10 @@ public class UserTest {
         user2.setFamilyName(newFamilyName);
         assertEquals(user2.getFamilyName(), newFamilyName);
     }
-
+    
+    @Test
+    public void toUppercase() {
+    	assertEquals("SERGIO", user1.getName().toUpperCase());
+    	assertEquals("MORATO", user1.getFamilyName().toUpperCase());
+    }
 }

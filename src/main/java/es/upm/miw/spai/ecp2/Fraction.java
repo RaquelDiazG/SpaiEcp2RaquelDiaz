@@ -64,4 +64,8 @@ public class Fraction {
         return this.getNumerator()*fraction.getDenominator()==this.getDenominator()*fraction.getNumerator();
     }
     
+    public boolean isGreater (Fraction fraction) {
+        return this.decimal() > fraction.decimal();
+    }
+    
 }

@@ -51,13 +51,16 @@ public class FractionTest {
         assertEquals(2, decimal2, 10e-3);
         assertEquals(4.5, decimal3, 10e-3);
     }
-    
+
     @Test
     public void isEquivalentTest() {
-        Fraction fractionEqui = new Fraction(8,4);
+        Fraction fractionEqui = new Fraction(8, 4);
         assertFalse(fraction1.isEquivalent(fraction2));
-        assertTrue(fraction2.isEquivalent(fractionEqui));       
+        assertTrue(fraction2.isEquivalent(fractionEqui));
     }
-    
-    
+
+    @Test
+    public void testIsGreater() {
+        assertEquals(true, fraction3.isGreater(fraction2));
+    }
 }
