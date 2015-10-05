@@ -45,5 +45,15 @@ public class DecimalCollection {
         average = average / this.collection.size();
         return average;
     }
+    
+    public double lower() {
+    	double lower = Double.POSITIVE_INFINITY;
+    	for (double item : this.collection){
+    		if (item < lower) {
+    			lower = item;
+    		}
+    	}
+    	return lower;
+    }
 
 }
