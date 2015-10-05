@@ -67,5 +67,15 @@ public class DecimalCollectionTest {
 	    decimalCollection.add(1.3);
         assertEquals(2.26666667, decimalCollection.average(), 10e-5);
     }
+	
+	@Test
+	public void lowerTest() {
+		decimalCollection.add(5.45);
+		assertEquals(5.45, decimalCollection.lower(), 10e-5);
+		decimalCollection.add(7.83);
+		assertEquals(5.45, decimalCollection.lower(), 10e-5);
+		decimalCollection.add(3.54);
+		assertEquals(3.54, decimalCollection.lower(), 10e-5);
+	}
 
 }
