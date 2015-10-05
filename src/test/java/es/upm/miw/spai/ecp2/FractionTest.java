@@ -63,4 +63,12 @@ public class FractionTest {
     public void testIsGreater() {
         assertEquals(true, fraction3.isGreater(fraction2));
     }
+    
+    @Test
+    public void isProperTest() {
+    	assertEquals(false, fraction2.isProper());
+    	assertEquals(false, fraction3.isProper());
+    	Fraction fraction4 = new Fraction(1, 2);
+    	assertEquals(true, fraction4.isProper());
+    }
 }
