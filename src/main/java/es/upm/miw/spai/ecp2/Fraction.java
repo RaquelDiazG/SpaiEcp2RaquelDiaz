@@ -68,4 +68,8 @@ public class Fraction {
         return this.decimal() > fraction.decimal();
     }
     
+    public boolean isProper() {
+    	return this.numerator < this.denominator;
+    }
+    
 }
