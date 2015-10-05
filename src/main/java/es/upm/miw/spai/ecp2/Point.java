@@ -46,5 +46,13 @@ public class Point {
         return new Point(this.getX()+point.getX(), this.getY()+point.getY());
     }
     
+    public void setX(int x) {
+    	this.x = x;
+    }
+    
+    public void setY(int y) {
+    	this.y = y;
+    }
+    
     
 }
