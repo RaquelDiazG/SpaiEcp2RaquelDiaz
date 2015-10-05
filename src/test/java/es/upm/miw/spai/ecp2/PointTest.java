@@ -92,5 +92,15 @@ public class PointTest {
         assertEquals(2, x2);
     }
     
+    @Test
+    public void settersTest() {
+    	assertEquals(4, point2.getX());
+    	assertEquals(2, point2.getY());
+    	point2.setX(5);
+    	point2.setY(7);
+    	assertEquals(5, point2.getX());
+    	assertEquals(7, point2.getY());
+    }
+    
     
 }
