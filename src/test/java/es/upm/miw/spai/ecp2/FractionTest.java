@@ -60,7 +60,7 @@ public class FractionTest {
     }
 
     @Test
-    public void testIsGreater() {
+    public void issGreaterTest() {
         assertEquals(true, fraction3.isGreater(fraction2));
     }
     
