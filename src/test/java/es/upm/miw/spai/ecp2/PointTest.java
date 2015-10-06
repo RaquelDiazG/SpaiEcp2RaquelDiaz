@@ -86,10 +86,9 @@ public class PointTest {
     
     @Test
     public void sumTest() {
-        int x1 = point1.getX()+point2.getX();
-        int x2 = point1.getY()+point2.getY();
-        assertEquals(4, x1);
-        assertEquals(2, x2);
+        Point sumPoint = point1.sum(point2);
+        assertEquals(4, sumPoint.getX());
+        assertEquals(2, sumPoint.getY());
     }
     
     @Test
