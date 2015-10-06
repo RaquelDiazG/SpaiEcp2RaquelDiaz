@@ -61,7 +61,7 @@ public class DecimalCollectionTest {
     
 	
 	@Test
-    public void testAverage() {
+    public void averageTest() {
 		decimalCollection.add(3.0);
 	    decimalCollection.add(2.5);
 	    decimalCollection.add(1.3);
