@@ -79,7 +79,7 @@ public class UserTest {
     }
     
     @Test
-    public void toUppercase() {
+    public void toUppercaseTest() {
     	assertEquals("SERGIO", user1.getName().toUpperCase());
     	assertEquals("MORATO", user1.getFamilyName().toUpperCase());
     }
